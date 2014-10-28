@@ -1,0 +1,8 @@
+#android auto gen folder files
+bin/
+gen/
+local.properties
+default.properties
+
+#windows auto gen folder infomation
+Thumbs.db

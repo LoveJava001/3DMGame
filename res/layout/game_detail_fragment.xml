@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Top 标题 -->
+
+    <LinearLayout
+        android:id="@+id/artical_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#896a45"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/content_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="游戏详情"
+            android:textSize="18sp" />
+
+        <!-- Content -->
+
+        <LinearLayout
+            android:id="@+id/game_detail_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            >
+
+            <WebView
+                android:id="@+id/game_strategy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Content 攻略信息 -->
+
+        <LinearLayout
+            android:id="@+id/game_detail_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

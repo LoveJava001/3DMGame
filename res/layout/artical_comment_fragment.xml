@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <!-- Top 标题 -->
+
+    <LinearLayout
+        android:id="@+id/artical_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#896a45"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/content_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="评论"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Content -->
+
+    <LinearLayout
+        android:id="@+id/artical_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1"
+        >
+        
+        <ListView 
+            android:id="@+id/list_comment"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></ListView>
+
+        
+    </LinearLayout>
+    
+    <!-- Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/button_color" 
+        >
+
+       <EditText
+           android:id="@+id/comment_content"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="请输入评论内容"
+           />
+       
+       <Button
+           android:id="@+id/content_comment"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="评论"
+           />
+    </LinearLayout>
+    
+</LinearLayout>

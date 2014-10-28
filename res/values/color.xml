@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <color name="lightwhite">#fedcbd</color>
+    <color name="white">#494e8f</color>
+    <color name="button_color">#563624</color>
+    <color name="title_backcolor">#896a45</color>
+    <color name="back_ground">#f2eada</color>
+</resources>
